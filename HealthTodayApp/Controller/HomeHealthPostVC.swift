@@ -21,6 +21,12 @@ class HomeHealthPostVC: UIViewController {
     @IBOutlet weak var cardView: CardView!
     @IBOutlet weak var goodScoreLbl: UILabel!
     @IBOutlet weak var badScoreLbl: UILabel!
+    
+    
+    var healthModelData = [HealthModel]()
+    var goal = [Goal]()
+    var coreDataModel = CoreDataStackClass()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

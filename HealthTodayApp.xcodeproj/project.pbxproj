@@ -14,6 +14,7 @@
 		6A2C61B322B33206006B21AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A2C61B222B33206006B21AA /* Assets.xcassets */; };
 		6A2C61B622B33206006B21AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A2C61B422B33206006B21AA /* LaunchScreen.storyboard */; };
 		6A82A42F22B421EC00056ADA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A82A42E22B421EC00056ADA /* CardView.swift */; };
+		6A82A43322B4243300056ADA /* CoreDataStackClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A82A43222B4243300056ADA /* CoreDataStackClass.swift */; };
 		99009BC13F700ED33818AB6B /* Pods_HealthTodayApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BA1B2F4F9E44C3E66C9A4E /* Pods_HealthTodayApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		6A2C61B522B33206006B21AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A2C61B722B33206006B21AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A82A42E22B421EC00056ADA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		6A82A43222B4243300056ADA /* CoreDataStackClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackClass.swift; sourceTree = "<group>"; };
 		C2BA1B2F4F9E44C3E66C9A4E /* Pods_HealthTodayApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthTodayApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -47,6 +49,7 @@
 		6A2C619C22B331FF006B21AA = {
 			isa = PBXGroup;
 			children = (
+				6A82A43122B423FC00056ADA /* CoreDataStack */,
 				6A2C61A722B331FF006B21AA /* HealthTodayApp */,
 				6A2C61A622B331FF006B21AA /* Products */,
 				923E0C75E9D1CEBA1D2A3981 /* Pods */,
@@ -91,6 +94,14 @@
 				6A2C61AA22B331FF006B21AA /* HomeHealthPostVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		6A82A43122B423FC00056ADA /* CoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				6A82A43222B4243300056ADA /* CoreDataStackClass.swift */,
+			);
+			path = CoreDataStack;
 			sourceTree = "<group>";
 		};
 		6FD6A63A066265847DEF9F80 /* Frameworks */ = {
@@ -227,6 +238,7 @@
 				6A2C61AB22B331FF006B21AA /* HomeHealthPostVC.swift in Sources */,
 				6A2C61A922B331FF006B21AA /* AppDelegate.swift in Sources */,
 				6A82A42F22B421EC00056ADA /* CardView.swift in Sources */,
+				6A82A43322B4243300056ADA /* CoreDataStackClass.swift in Sources */,
 				6A2C61B122B331FF006B21AA /* HealthTodayApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
