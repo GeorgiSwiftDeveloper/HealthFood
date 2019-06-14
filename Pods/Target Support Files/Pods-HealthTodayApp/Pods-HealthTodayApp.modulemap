@@ -1,0 +1,6 @@
+framework module Pods_HealthTodayApp {
+  umbrella header "Pods-HealthTodayApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
