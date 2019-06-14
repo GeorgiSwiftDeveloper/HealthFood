@@ -383,11 +383,21 @@
                     </view>
                     <navigationItem key="navigationItem" id="Fmg-N4-uPA"/>
                     <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="badScoreLbl" destination="sBk-oN-CtN" id="b1S-Oq-hC0"/>
+                        <outlet property="cardView" destination="F81-Vu-g2X" id="n7W-Dg-2TP"/>
+                        <outlet property="chartView" destination="59N-Az-TtC" id="DiW-Vh-aT8"/>
+                        <outlet property="currentDateLabel" destination="goC-dN-xJG" id="EE1-Nz-gA3"/>
+                        <outlet property="goalLbl" destination="68C-tQ-Xud" id="g9v-e8-Ic9"/>
+                        <outlet property="goodScoreLbl" destination="lP7-Nj-ciH" id="dJi-Uy-Ek8"/>
+                        <outlet property="notePostTableView" destination="UcY-bx-bRG" id="P4S-uC-YPF"/>
+                        <outlet property="userImage" destination="sDJ-dT-f03" id="Wes-yU-rbW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJx-Og-RRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="qkl-kr-vfA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1336.8" y="33.283358320839582"/>
+            <point key="canvasLocation" x="1634" y="58"/>
         </scene>
     </scenes>
     <resources>

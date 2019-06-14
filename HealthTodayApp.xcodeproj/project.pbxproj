@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		6A2C61A922B331FF006B21AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2C61A822B331FF006B21AA /* AppDelegate.swift */; };
-		6A2C61AB22B331FF006B21AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2C61AA22B331FF006B21AA /* ViewController.swift */; };
+		6A2C61AB22B331FF006B21AA /* HomeHealthPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2C61AA22B331FF006B21AA /* HomeHealthPostVC.swift */; };
 		6A2C61AE22B331FF006B21AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A2C61AC22B331FF006B21AA /* Main.storyboard */; };
 		6A2C61B122B331FF006B21AA /* HealthTodayApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A2C61AF22B331FF006B21AA /* HealthTodayApp.xcdatamodeld */; };
 		6A2C61B322B33206006B21AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A2C61B222B33206006B21AA /* Assets.xcassets */; };
 		6A2C61B622B33206006B21AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A2C61B422B33206006B21AA /* LaunchScreen.storyboard */; };
+		6A82A42F22B421EC00056ADA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A82A42E22B421EC00056ADA /* CardView.swift */; };
 		99009BC13F700ED33818AB6B /* Pods_HealthTodayApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BA1B2F4F9E44C3E66C9A4E /* Pods_HealthTodayApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +22,13 @@
 		37E94AFCC07D22D30746A83B /* Pods-HealthTodayApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthTodayApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthTodayApp/Pods-HealthTodayApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6A2C61A522B331FF006B21AA /* HealthTodayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthTodayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2C61A822B331FF006B21AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6A2C61AA22B331FF006B21AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6A2C61AA22B331FF006B21AA /* HomeHealthPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHealthPostVC.swift; sourceTree = "<group>"; };
 		6A2C61AD22B331FF006B21AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A2C61B022B331FF006B21AA /* HealthTodayApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HealthTodayApp.xcdatamodel; sourceTree = "<group>"; };
 		6A2C61B222B33206006B21AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A2C61B522B33206006B21AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A2C61B722B33206006B21AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A82A42E22B421EC00056ADA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C2BA1B2F4F9E44C3E66C9A4E /* Pods_HealthTodayApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthTodayApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -64,7 +66,8 @@
 			isa = PBXGroup;
 			children = (
 				6A2C61A822B331FF006B21AA /* AppDelegate.swift */,
-				6A2C61AA22B331FF006B21AA /* ViewController.swift */,
+				6A82A42D22B421CA00056ADA /* DesignService */,
+				6A82A43022B4227E00056ADA /* Controller */,
 				6A2C61AC22B331FF006B21AA /* Main.storyboard */,
 				6A2C61B222B33206006B21AA /* Assets.xcassets */,
 				6A2C61B422B33206006B21AA /* LaunchScreen.storyboard */,
@@ -72,6 +75,22 @@
 				6A2C61AF22B331FF006B21AA /* HealthTodayApp.xcdatamodeld */,
 			);
 			path = HealthTodayApp;
+			sourceTree = "<group>";
+		};
+		6A82A42D22B421CA00056ADA /* DesignService */ = {
+			isa = PBXGroup;
+			children = (
+				6A82A42E22B421EC00056ADA /* CardView.swift */,
+			);
+			path = DesignService;
+			sourceTree = "<group>";
+		};
+		6A82A43022B4227E00056ADA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6A2C61AA22B331FF006B21AA /* HomeHealthPostVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		6FD6A63A066265847DEF9F80 /* Frameworks */ = {
@@ -205,8 +224,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A2C61AB22B331FF006B21AA /* ViewController.swift in Sources */,
+				6A2C61AB22B331FF006B21AA /* HomeHealthPostVC.swift in Sources */,
 				6A2C61A922B331FF006B21AA /* AppDelegate.swift in Sources */,
+				6A82A42F22B421EC00056ADA /* CardView.swift in Sources */,
 				6A2C61B122B331FF006B21AA /* HealthTodayApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
