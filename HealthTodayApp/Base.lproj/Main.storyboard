@@ -167,7 +167,7 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </tableViewCellContentView>
                                                                 <connections>
-                                                                    <outlet property="brandNameLbl" destination="Lx3-0h-lGw" id="xdY-vw-QfI"/>
+                                                                    <outlet property="brandNameLbl" destination="Lx3-0h-lGw" id="5He-EU-nv3"/>
                                                                     <outlet property="descriptionLbl" destination="u9H-GB-j8Z" id="MA0-5E-wUh"/>
                                                                     <outlet property="postDate" destination="8Vr-ji-rG0" id="hje-2y-ER5"/>
                                                                     <outlet property="selectedFoodType" destination="TX8-uK-re5" id="Bej-pn-4HH"/>
@@ -380,6 +380,9 @@
                             <constraint firstItem="iMD-UO-lav" firstAttribute="width" secondItem="gPq-1e-Oiu" secondAttribute="width" id="vGK-c1-Tbr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hAg-W5-eXk"/>
+                        <connections>
+                            <outlet property="chartView" destination="59N-Az-TtC" id="5SP-LC-Xy3"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Fmg-N4-uPA"/>
                     <size key="freeformSize" width="375" height="1000"/>

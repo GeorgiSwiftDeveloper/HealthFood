@@ -15,6 +15,10 @@
 		6A2C61B622B33206006B21AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A2C61B422B33206006B21AA /* LaunchScreen.storyboard */; };
 		6A82A42F22B421EC00056ADA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A82A42E22B421EC00056ADA /* CardView.swift */; };
 		6A82A43322B4243300056ADA /* CoreDataStackClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A82A43222B4243300056ADA /* CoreDataStackClass.swift */; };
+		6A82A43622B4286C00056ADA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A82A43522B4286C00056ADA /* DataService.swift */; };
+		6A82A43B22B42AC800056ADA /* ColorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A82A43A22B42AC800056ADA /* ColorService.swift */; };
+		6A82A43E22B42B4900056ADA /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A82A43D22B42B4900056ADA /* NoteTableViewCell.swift */; };
+		6A82A44122B42DF900056ADA /* SelectedSegmentPostType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A82A44022B42DF900056ADA /* SelectedSegmentPostType.swift */; };
 		99009BC13F700ED33818AB6B /* Pods_HealthTodayApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BA1B2F4F9E44C3E66C9A4E /* Pods_HealthTodayApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +35,10 @@
 		6A2C61B722B33206006B21AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A82A42E22B421EC00056ADA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		6A82A43222B4243300056ADA /* CoreDataStackClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackClass.swift; sourceTree = "<group>"; };
+		6A82A43522B4286C00056ADA /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		6A82A43A22B42AC800056ADA /* ColorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorService.swift; sourceTree = "<group>"; };
+		6A82A43D22B42B4900056ADA /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		6A82A44022B42DF900056ADA /* SelectedSegmentPostType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedSegmentPostType.swift; sourceTree = "<group>"; };
 		C2BA1B2F4F9E44C3E66C9A4E /* Pods_HealthTodayApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthTodayApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -49,6 +57,9 @@
 		6A2C619C22B331FF006B21AA = {
 			isa = PBXGroup;
 			children = (
+				6A82A43F22B42DCA00056ADA /* SelectedSegmentTypes */,
+				6A82A43C22B42B2700056ADA /* TableVIewCell */,
+				6A82A43422B4284900056ADA /* DataService */,
 				6A82A43122B423FC00056ADA /* CoreDataStack */,
 				6A2C61A722B331FF006B21AA /* HealthTodayApp */,
 				6A2C61A622B331FF006B21AA /* Products */,
@@ -84,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				6A82A42E22B421EC00056ADA /* CardView.swift */,
+				6A82A43A22B42AC800056ADA /* ColorService.swift */,
 			);
 			path = DesignService;
 			sourceTree = "<group>";
@@ -102,6 +114,30 @@
 				6A82A43222B4243300056ADA /* CoreDataStackClass.swift */,
 			);
 			path = CoreDataStack;
+			sourceTree = "<group>";
+		};
+		6A82A43422B4284900056ADA /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				6A82A43522B4286C00056ADA /* DataService.swift */,
+			);
+			path = DataService;
+			sourceTree = "<group>";
+		};
+		6A82A43C22B42B2700056ADA /* TableVIewCell */ = {
+			isa = PBXGroup;
+			children = (
+				6A82A43D22B42B4900056ADA /* NoteTableViewCell.swift */,
+			);
+			path = TableVIewCell;
+			sourceTree = "<group>";
+		};
+		6A82A43F22B42DCA00056ADA /* SelectedSegmentTypes */ = {
+			isa = PBXGroup;
+			children = (
+				6A82A44022B42DF900056ADA /* SelectedSegmentPostType.swift */,
+			);
+			path = SelectedSegmentTypes;
 			sourceTree = "<group>";
 		};
 		6FD6A63A066265847DEF9F80 /* Frameworks */ = {
@@ -238,8 +274,12 @@
 				6A2C61AB22B331FF006B21AA /* HomeHealthPostVC.swift in Sources */,
 				6A2C61A922B331FF006B21AA /* AppDelegate.swift in Sources */,
 				6A82A42F22B421EC00056ADA /* CardView.swift in Sources */,
+				6A82A43E22B42B4900056ADA /* NoteTableViewCell.swift in Sources */,
+				6A82A43622B4286C00056ADA /* DataService.swift in Sources */,
 				6A82A43322B4243300056ADA /* CoreDataStackClass.swift in Sources */,
+				6A82A44122B42DF900056ADA /* SelectedSegmentPostType.swift in Sources */,
 				6A2C61B122B331FF006B21AA /* HealthTodayApp.xcdatamodeld in Sources */,
+				6A82A43B22B42AC800056ADA /* ColorService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
