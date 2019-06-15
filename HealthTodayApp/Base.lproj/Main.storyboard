@@ -445,7 +445,7 @@
                                                 <rect key="frame" x="0.0" y="382" width="375" height="418"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="55" id="PnV-2j-caf" customClass="CalendareTableViewCell" customModule="HealthyPost" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="55" id="PnV-2j-caf" customClass="CalendarTableViewCell" customModule="HealthTodayApp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="375" height="55"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PnV-2j-caf" id="1Kq-0J-Wah">
@@ -539,10 +539,10 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </tableViewCellContentView>
                                                         <connections>
-                                                            <outlet property="commentLbl" destination="eLT-l7-eka" id="N60-se-8rp"/>
-                                                            <outlet property="descriptionLbl" destination="AUp-ko-Q4g" id="YtN-JJ-qSK"/>
-                                                            <outlet property="selectedView" destination="zgM-qR-DLd" id="z51-th-thP"/>
-                                                            <outlet property="timeLbl" destination="LJE-Ga-A0j" id="Z3n-g4-fd7"/>
+                                                            <outlet property="commentLbl" destination="eLT-l7-eka" id="eab-3i-LKO"/>
+                                                            <outlet property="descriptionLbl" destination="AUp-ko-Q4g" id="KHS-6q-YAi"/>
+                                                            <outlet property="selectedView" destination="zgM-qR-DLd" id="yjh-6r-sZ8"/>
+                                                            <outlet property="timeLbl" destination="LJE-Ga-A0j" id="pQP-5a-g6P"/>
                                                         </connections>
                                                     </tableViewCell>
                                                 </prototypes>

@@ -126,7 +126,7 @@ class CalendarVC: UIViewController, UIGestureRecognizerDelegate, FSCalendarDeleg
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as? CalendareTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as? CalendarTableViewCell
         cell?.configureCell(post: healthModel[indexPath.row])
         return cell!
     }
