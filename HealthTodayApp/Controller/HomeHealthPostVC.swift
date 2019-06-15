@@ -216,5 +216,67 @@ class HomeHealthPostVC: UIViewController, ChartViewDelegate , UITableViewDelegat
         return true
     }
     
+    
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let editAction =  UIContextualAction(style: .normal, title: "Edit", handler: { (action,view,completionHandler ) in
+            let healthPost = self.healthModelData[indexPath.row]
+            
+            self.performSegue(withIdentifier: "EditPostVC", sender: healthPost)
+            completionHandler(true)
+        })
+        editAction.backgroundColor =  #colorLiteral(red: 0, green: 0.5, blue: 0, alpha: 1)
+        //        editAction.image = UIImage(named: "pencil")
+        
+        let deleteAction =  UIContextualAction(style: .normal, title: "Delete", handler: { (action,view,completionHandler ) in
+            self.removePostRow(atIndexPath: indexPath)
+            self.healthModelData.remove(at: indexPath.row)
+            self.notePostTableView.deleteRows(at: [indexPath], with: .automatic)
+            self.updateDataByWeek()
+            self.chartView.animate(xAxisDuration: 1.0, yAxisDuration: 1.0)
+            
+            DispatchQueue.main.async {
+                self.cardViewHeightLayout.constant = self.notePostTableView.contentSize.height
+                self.view.layoutIfNeeded()
+            }
+            completionHandler(true)
+        })
+        deleteAction.backgroundColor =  #colorLiteral(red: 0.5, green: 0, blue: 0, alpha: 1)
+        //        deleteAction.image = UIImage(named: "icon")
+        let confrigation = UISwipeActionsConfiguration(actions: [editAction, deleteAction])
+        
+        return confrigation
+    }
+
+    
+    
+    func removePostRow(atIndexPath indexPath: IndexPath) {
+        let managedContext = coreDataModel.persistentContainer.viewContext
+        managedContext.delete(healthModelData[indexPath.row])
+        do{
+            try managedContext.save()
+        }catch {
+            print("Could not remove post \(error.localizedDescription)")
+        }
+    }
+    
+    
+    func fetchGaolText() {
+        let managedContext = coreDataModel.persistentContainer.viewContext
+        let request = NSFetchRequest<Goal>(entityName: "Goal")
+        do{
+            goal =   try managedContext.fetch(request)
+            for goal in goal {
+                goal.value(forKey: "goalText")
+                goalLbl.text = goal.goalText
+            }
+        }catch{
+            print("error cant fetch goal text")
+        }
+    }
+    
+
+    
 }
 
