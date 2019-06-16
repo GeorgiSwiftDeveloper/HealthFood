@@ -981,7 +981,7 @@
         <!--More-->
         <scene sceneID="VPl-ee-QzO">
             <objects>
-                <viewController id="a4C-Pq-RKf" customClass="SettingsVC" customModule="HealthyPost" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="a4C-Pq-RKf" customClass="SettignsVC" customModule="HealthTodayApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VUJ-U8-PDP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1058,11 +1058,8 @@
                                                     <constraint firstAttribute="width" constant="30" id="uxv-BW-pTc"/>
                                                 </constraints>
                                                 <state key="normal" image="add"/>
-                                                <connections>
-                                                    <action selector="imageBtnTapped:" destination="a4C-Pq-RKf" eventType="touchUpInside" id="2S3-3F-XJP"/>
-                                                </connections>
                                             </button>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9I7-Lt-z4U" customClass="TextColorChange" customModule="HealthyPost" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9I7-Lt-z4U">
                                                 <rect key="frame" x="20" y="55" width="240" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="fxw-K1-2m5"/>
@@ -1130,9 +1127,6 @@
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOF-VU-Jte">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                         <state key="normal" image="backImage"/>
-                                        <connections>
-                                            <action selector="goBackBtn:" destination="a4C-Pq-RKf" eventType="touchUpInside" id="OSp-4t-agg"/>
-                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" List" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lC4-l9-mC1">
                                         <rect key="frame" x="30" y="0.0" width="37" height="30"/>
@@ -1173,9 +1167,6 @@
                                         <state key="normal" title="SET GOAL">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <connections>
-                                            <action selector="saveUserGoalBtn:" destination="a4C-Pq-RKf" eventType="touchUpInside" id="lo8-LC-Ap8"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mg3-W0-cs1" customClass="ButtonUIService" customModule="HealthyPost" customModuleProvider="target">
                                         <rect key="frame" x="20" y="160" width="100" height="30"/>
@@ -1188,9 +1179,6 @@
                                         <state key="normal" title="CANCEL">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <connections>
-                                            <action selector="cancelUserGoalBtn:" destination="a4C-Pq-RKf" eventType="touchUpInside" id="YXX-S9-F77"/>
-                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter you goal of steps" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="uZS-HS-VDN">
                                         <rect key="frame" x="10" y="78" width="292" height="40"/>
@@ -1261,15 +1249,15 @@
                     </view>
                     <navigationItem key="navigationItem" title="More" id="6zL-xj-WQy"/>
                     <connections>
-                        <outlet property="addUserPhoto" destination="7IU-8P-XDD" id="ObS-6K-YlP"/>
-                        <outlet property="backroundView" destination="VUJ-U8-PDP" id="RPb-8i-jus"/>
-                        <outlet property="designSettingsView" destination="3s5-nD-rcB" id="TUJ-z0-nEi"/>
-                        <outlet property="goalTextField" destination="uZS-HS-VDN" id="t7a-Iq-oYI"/>
-                        <outlet property="goalView" destination="T8k-Jo-JhG" id="hIt-m6-Yit"/>
-                        <outlet property="settingsTableView" destination="dHf-je-Xmg" id="x0Z-2a-JaQ"/>
-                        <outlet property="todayDateLbl" destination="Deq-h4-RaC" id="pAw-3J-cZV"/>
-                        <outlet property="userImage" destination="dQ0-aW-sAd" id="9Hs-Hx-CWn"/>
-                        <outlet property="userNameTextField" destination="9I7-Lt-z4U" id="bVa-nO-0AG"/>
+                        <outlet property="addUserPhoto" destination="7IU-8P-XDD" id="VUn-0s-kaS"/>
+                        <outlet property="backroundView" destination="VUJ-U8-PDP" id="jAY-wM-E8I"/>
+                        <outlet property="designsettingsViww" destination="3s5-nD-rcB" id="iMm-LS-e4G"/>
+                        <outlet property="goalTextField" destination="uZS-HS-VDN" id="waP-B3-1vh"/>
+                        <outlet property="goalView" destination="T8k-Jo-JhG" id="6jd-mn-ftA"/>
+                        <outlet property="settingsTableView" destination="dHf-je-Xmg" id="KC5-bL-plz"/>
+                        <outlet property="todayDateLbl" destination="Deq-h4-RaC" id="YWZ-0i-3et"/>
+                        <outlet property="userImage" destination="dQ0-aW-sAd" id="JWK-Tx-uD6"/>
+                        <outlet property="userNameTextField" destination="9I7-Lt-z4U" id="VoJ-oM-9Wx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="91b-cv-DP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
