@@ -35,10 +35,36 @@ class SettignsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    
+        if let data = UserDefaults.standard.object(forKey: "image"){
+            userImage.image = UIImage(data: data as! Data)
+        }
+        if let userName = UserDefaults.standard.object(forKey: "userName") {
+            userNameTextField.text = userName as? String
+            
+        }
+        
+        if userImage.image == nil {
+            userImage.image = UIImage(named: "addPhoto")
+        }
+        userImage.layer.cornerRadius = 4
+        
+        let toolBar = UIToolbar()
+        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: #selector(doneEditing))
+         let flexibaleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: self, action: nil)
+        userNameTextField.inputAccessoryView = toolBar
+        toolBar.setItems([flexibaleSpace,doneButton], animated: true)
+        toolBar.sizeToFit()
+        userNameTextField.delegate = self
+        
+        todayDateLbl.text = "\(DateService.service.crrentDateTime())"
+        settingsTableView.separatorColor = UIColor(white: 0.95, alpha: 1)
     }
     
+    
+    @objc func doneEditing() {
+        view.endEditing(true)
+        UserDefaults.standard.set(userNameTextField.text, forKey: "userName")
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
