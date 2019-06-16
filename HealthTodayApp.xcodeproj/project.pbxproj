@@ -23,6 +23,7 @@
 		6A82A44522B562B400056ADA /* CreateNoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A82A44422B562B400056ADA /* CreateNoteVC.swift */; };
 		6A82A44722B5671700056ADA /* CalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A82A44622B5671700056ADA /* CalendarTableViewCell.swift */; };
 		6A82A44922B569CE00056ADA /* EditPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A82A44822B569CE00056ADA /* EditPostVC.swift */; };
+		6A82A44B22B6BF0B00056ADA /* SettignsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A82A44A22B6BF0B00056ADA /* SettignsVC.swift */; };
 		99009BC13F700ED33818AB6B /* Pods_HealthTodayApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BA1B2F4F9E44C3E66C9A4E /* Pods_HealthTodayApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		6A82A44422B562B400056ADA /* CreateNoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteVC.swift; sourceTree = "<group>"; };
 		6A82A44622B5671700056ADA /* CalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCell.swift; sourceTree = "<group>"; };
 		6A82A44822B569CE00056ADA /* EditPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPostVC.swift; sourceTree = "<group>"; };
+		6A82A44A22B6BF0B00056ADA /* SettignsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettignsVC.swift; sourceTree = "<group>"; };
 		C2BA1B2F4F9E44C3E66C9A4E /* Pods_HealthTodayApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthTodayApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 				6A82A44222B561D200056ADA /* CalendarVC.swift */,
 				6A82A44422B562B400056ADA /* CreateNoteVC.swift */,
 				6A82A44822B569CE00056ADA /* EditPostVC.swift */,
+				6A82A44A22B6BF0B00056ADA /* SettignsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				6A82A43622B4286C00056ADA /* DataService.swift in Sources */,
 				6A82A43322B4243300056ADA /* CoreDataStackClass.swift in Sources */,
 				6A82A44122B42DF900056ADA /* SelectedSegmentPostType.swift in Sources */,
+				6A82A44B22B6BF0B00056ADA /* SettignsVC.swift in Sources */,
 				6A2C61B122B331FF006B21AA /* HealthTodayApp.xcdatamodeld in Sources */,
 				6A82A44522B562B400056ADA /* CreateNoteVC.swift in Sources */,
 				6A82A43B22B42AC800056ADA /* ColorService.swift in Sources */,
