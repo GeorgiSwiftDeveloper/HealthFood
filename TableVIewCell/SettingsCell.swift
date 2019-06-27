@@ -10,6 +10,10 @@ import UIKit
 
 class SettingsCell: UITableViewCell {
 
+    
+    @IBOutlet weak var settingsLbl: UILabel!
+    @IBOutlet weak var settingsImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

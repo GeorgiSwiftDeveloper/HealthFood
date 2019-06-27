@@ -76,6 +76,8 @@ class SettignsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell =  tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? SettingsCell else {return UITableViewCell()}
+        cell.settingsLbl.text = settingsList[indexPath.row]
+        cell.settingsImage.image = UIImage(named: settingsImage[indexPath.row])
         return cell
     }
 
