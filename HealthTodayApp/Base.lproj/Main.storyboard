@@ -990,14 +990,14 @@
                                 <rect key="frame" x="0.0" y="344" width="414" height="518"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="60" id="sxr-lu-Cdm" customClass="SettingsCell" customModule="HealthyPost" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="60" id="sxr-lu-Cdm" customClass="SettingsCell" customModule="HealthTodayApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sxr-lu-Cdm" id="HeP-BY-VU8">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bh9-X0-JhV" customClass="DesignSettingsUIView" customModule="HealthyPost" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bh9-X0-JhV" customClass="DesignSettingsUIView" customModule="HealthTodayApp" customModuleProvider="target">
                                                     <rect key="frame" x="5" y="5" width="404" height="49.5"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xFu-sj-BsZ">
@@ -1034,8 +1034,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="settingsImage" destination="xFu-sj-BsZ" id="9BI-IB-UYi"/>
-                                            <outlet property="settingsLbl" destination="3xc-8S-6Ey" id="ymf-4m-P6E"/>
+                                            <outlet property="settingsImage" destination="xFu-sj-BsZ" id="hk8-xP-5I6"/>
+                                            <outlet property="settingsLbl" destination="3xc-8S-6Ey" id="8a7-rA-BOV"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1045,10 +1045,10 @@
                                     <outlet property="delegate" destination="a4C-Pq-RKf" id="NAE-Ta-gNh"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3s5-nD-rcB" customClass="DesignSettingsUIView" customModule="HealthyPost" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3s5-nD-rcB" customClass="DesignSettingsUIView" customModule="HealthTodayApp" customModuleProvider="target">
                                 <rect key="frame" x="15" y="177" width="384" height="117"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O6K-cZ-dwl" customClass="DesignView" customModule="HealthyPost" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O6K-cZ-dwl" customClass="DesignView" customModule="HealthTodayApp" customModuleProvider="target">
                                         <rect key="frame" x="124" y="0.0" width="260" height="117"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7IU-8P-XDD">
@@ -1079,7 +1079,7 @@
                                             <constraint firstAttribute="bottom" secondItem="9I7-Lt-z4U" secondAttribute="bottom" constant="32" id="zO3-OV-uvj"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uXF-As-PUm" customClass="SelectedTypeRound" customModule="HealthyPost" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uXF-As-PUm" customClass="SelectedTypeRound" customModule="HealthTodayApp" customModuleProvider="target">
                                         <rect key="frame" x="21" y="18" width="80" height="80"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dQ0-aW-sAd">
@@ -1140,13 +1140,13 @@
                                     <constraint firstAttribute="width" constant="67" id="EUp-Ug-Gs4"/>
                                 </constraints>
                             </stackView>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8k-Jo-JhG" customClass="DesignSettingsUIView" customModule="HealthyPost" customModuleProvider="target">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8k-Jo-JhG" customClass="DesignSettingsUIView" customModule="HealthTodayApp" customModuleProvider="target">
                                 <rect key="frame" x="51" y="358" width="312" height="200"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7JH-gW-BSw" customClass="SelectedTypeRound" customModule="HealthyPost" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7JH-gW-BSw" customClass="SelectedTypeRound" customModule="HealthTodayApp" customModuleProvider="target">
                                         <rect key="frame" x="113" y="-62" width="86" height="90"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="target" translatesAutoresizingMaskIntoConstraints="NO" id="tJ8-GT-gIF" customClass="ImageService" customModule="HealthyPost" customModuleProvider="target">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="target" translatesAutoresizingMaskIntoConstraints="NO" id="tJ8-GT-gIF" customClass="ImageService" customModule="HealthTodayApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="86" height="90"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1156,7 +1156,7 @@
                                             <constraint firstAttribute="height" constant="90" id="blO-HP-pzW"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Go6-3h-LEU" customClass="ButtonUIService" customModule="HealthyPost" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Go6-3h-LEU" customClass="ButtonUIService" customModule="HealthTodayApp" customModuleProvider="target">
                                         <rect key="frame" x="192" y="160" width="100" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -1168,7 +1168,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mg3-W0-cs1" customClass="ButtonUIService" customModule="HealthyPost" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mg3-W0-cs1" customClass="ButtonUIService" customModule="HealthTodayApp" customModuleProvider="target">
                                         <rect key="frame" x="20" y="160" width="100" height="30"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
